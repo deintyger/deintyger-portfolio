@@ -1,3 +1,12 @@
+// Declarations for image file imports
+declare module '*.png'
+declare module '*.jpg'
+declare module '*.jpeg'
+declare module '*.svg' {
+  const content: string
+  export default content
+}
+
 // Specific declaration for the generated assets index
 declare module "../assets/assets" {
   export const logo: string
